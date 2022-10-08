@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Batman</title>
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <script src="../assets/scripts/index.js"></script>
+</head>
+<body>
+    <nav class="b-menu">
+        <ul>
+            <li class="b-menu__item">
+                <a href="../pages/index.html">Página inicial</a>
+            </li>
+            <li class="b-menu__item">
+                <a href="../pages/batman/batman.html">Batman</a>
+            </li>
+           <!-- <li class="b-menu__item b-menu__icon">
+                <img src="../assets/logo.png" alt="Logo Batman">
+            </li> -->
+            <li class="b-menu__item">
+                <a href="../pages/coringa/coringa.html">Coringa</a>
+            </li>
+            <li class="b-menu__item">
+                <a href="../pages/charada/charada.html">Charada</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="b-container">
+       <div class="b-cards-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
+         <a href="#" class="b-card" id="batman-01">
+            <img src="../assets/batman2.jpg" alt="Batman" class="b-card__image">
+            <h2 class="b-card__title">Batman</h2>
+         </a>
+         <a href="#" class="b-card" id="coringa-02">
+            <img src="../assets/coringa2.jpg" alt="Coringa" class="b-card__image">
+            <h2 class="b-card__title">Coringa</h2>
+         </a>
+         <a href="#" class="b-card" id="charada-03">
+            <img src="../assets/charada.jpg" alt="Charada" class="b-card__image">
+            <h2 class="b-card__title">Charada</h2>
+         </a>
+       </div>
+    </div>
+
+    <div class="b-controller">
+        <div id="1" onclick="selectCarouselItem(this)" class="b-controller__button b-controller__button--active">
+            01
+        </div>
+        <div id="2" onclick="selectCarouselItem(this)" class="b-controller__button">
+            02
+        </div>
+        <div id="3" onclick="selectCarouselItem(this)" class="b-controller__button">
+            03
+        </div>
+        <div class="b-controller__line"></div>
+    </div>
+</body>
+</html>
